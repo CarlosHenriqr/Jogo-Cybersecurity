@@ -1,0 +1,284 @@
+/* Importa a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
+
+/* --- Definição das Variáveis de Tema --- */
+:root {
+  --font-family: 'Poppins', sans-serif;
+  
+  /* Cores base para o tema claro */
+  --bg-primary: #f0f2f5;
+  --text-color: #ffffff; /* Texto branco sobre fundos coloridos */
+  --card-text-color: #2c3e50; /* Texto para caixas de feedback/welcome */
+  --feedback-bg-light: rgba(255, 255, 255, 0.95);
+  --feedback-border-light: rgba(0, 0, 0, 0.1);
+
+  /* Cores das Opções */
+  --option-a-bg: linear-gradient(135deg, #FF6F61 0%, #DE4C3D 100%); /* Vermelho/Laranja */
+  --option-b-bg: linear-gradient(135deg, #61A4FF 0%, #3D7DDE 100%); /* Azul */
+
+  /* Cores de feedback */
+  --correct-bg-color: #2ecc71;
+  --incorrect-bg-color: #e74c3c;
+  --correct-icon-color: #ffffff;
+  --incorrect-icon-color: #ffffff;
+}
+
+[data-theme='dark'] {
+  --bg-primary: #1a1a2e;
+  --feedback-bg-dark: rgba(30, 30, 40, 0.95);
+  --feedback-border-dark: rgba(255, 255, 255, 0.1);
+  --card-text-color: #ecf0f1;
+  
+  /* Cores das Opções (podem ser as mesmas ou ajustadas para dark mode) */
+  --option-a-bg: linear-gradient(135deg, #E04E39 0%, #B83B2D 100%); /* Vermelho mais escuro */
+  --option-b-bg: linear-gradient(135deg, #4A8EDF 0%, #3A70B0 100%); /* Azul mais escuro */
+}
+/* --- Fim das Variáveis --- */
+
+body {
+  background-color: var(--bg-primary);
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow: hidden; /* Garante que os gradientes preencham sem scroll */
+}
+
+.app-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme-toggler {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 100; /* Garante que fique por cima de tudo */
+}
+.theme-toggler:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Telas de Bem-Vindo, Feedback e Conclusão (ainda usam um card central) --- */
+.game-card {
+  background-color: var(--feedback-bg-light);
+  border: 1px solid var(--feedback-border-light);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+  max-width: 700px;
+  width: 90%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition: background-color 0.3s ease, border 0.3s ease;
+  z-index: 10;
+}
+
+[data-theme='dark'] .game-card {
+  background-color: var(--feedback-bg-dark);
+  border: 1px solid var(--feedback-border-dark);
+}
+
+.game-card h1 {
+  color: var(--card-text-color);
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.game-card h2 {
+  color: var(--card-text-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.game-card p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--card-text-color);
+  margin-bottom: 25px;
+}
+
+.game-card .btn-card {
+  background-color: var(--option-b-bg); /* Azul vibrante */
+  color: var(--text-color);
+  border: none;
+  border-radius: 12px;
+  padding: 18px 25px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.game-card .btn-card:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Tela de Pergunta (Layout de 2 Opções) --- */
+.question-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.option-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  color: var(--text-color);
+  font-size: 3.5rem; /* Ajustado para caber o texto */
+  font-weight: 800;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease, transform 0.2s ease;
+  position: relative; /* Para o efeito de hover */
+  overflow: hidden; /* Garante que o texto não saia */
+}
+
+.option-box.A {
+  background-image: var(--option-a-bg);
+}
+
+.option-box.B {
+  background-image: var(--option-b-bg);
+}
+
+.option-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0); /* Overlay transparente */
+  transition: background-color 0.3s ease;
+}
+
+.option-box:hover::before {
+  background-color: rgba(0, 0, 0, 0.1); /* Overlay escuro no hover */
+}
+
+.option-box span {
+  position: relative;
+  z-index: 2; /* Garante que o texto fique acima do overlay */
+  max-width: 80%; /* Limita a largura do texto */
+}
+
+/* Efeito de zoom no texto ao passar o mouse */
+.option-box:hover span {
+  transform: scale(1.05);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Reduz o tamanho da fonte para telas menores */
+@media (max-width: 768px) {
+  .question-container {
+    flex-direction: column;
+  }
+  .option-box {
+    font-size: 2.5rem;
+    padding: 30px;
+    min-height: 45vh; /* Garante que cada opção tenha altura mínima */
+  }
+  .game-card h1 { font-size: 2.2rem; }
+  .game-card h2 { font-size: 1.4rem; }
+  .game-card p { font-size: 1rem; }
+}
+
+/* --- Feedback Screen (integrado com o card) --- */
+.feedback-card {
+  background-color: var(--feedback-bg-light);
+  border: 1px solid var(--feedback-border-light);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+  max-width: 700px;
+  width: 90%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left; /* Alinhamento do feedback */
+  transition: background-color 0.3s ease, border 0.3s ease;
+  z-index: 10;
+}
+
+[data-theme='dark'] .feedback-card {
+  background-color: var(--feedback-bg-dark);
+  border: 1px solid var(--feedback-border-dark);
+}
+
+.feedback-card h3 {
+  margin-top: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--card-text-color);
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.feedback-card h3 .feedback-icon {
+  font-size: 2.2rem;
+  margin-right: 15px;
+  line-height: 1; /* Alinha o ícone verticalmente */
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-card .feedback-icon.correct {
+  background-color: var(--correct-bg-color);
+}
+
+.feedback-card .feedback-icon.incorrect {
+  background-color: var(--incorrect-bg-color);
+}
+
+.feedback-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--card-text-color);
+  margin-bottom: 15px;
+}
+
+.feedback-card strong {
+  color: var(--card-text-color);
+}
