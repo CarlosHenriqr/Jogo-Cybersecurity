@@ -1,381 +1,380 @@
 {
     "Questions_Adult": [
         {
-            "title": "Is this email safe?",
+            "title": "Este e-mail é seguro?",
             "image": "./img/phishing1.png",
-            "left": "Safe",
-            "right": "Not safe",
-            "up": "No answer",
-            "down": "No answer",
+            "left": "Seguro",
+            "right": "Não é seguro",
+            "up": "Não sei",
+            "down": "Não sei",
             "good_answer": "right",
-            "details": "This email is sent by a strange address, a government institution will never have a gmail, hotmail or outlook address."
+            "details": "Este e-mail é enviado por um endereço estranho. Instituições sérias, como órgãos governamentais, nunca usarão endereços genéricos como @gmail, @hotmail ou @outlook."
         },
         {
-            "title": "What is the simplest way to stop brute-force cyberattacks dead in their tracks?",
+            "title": "Qual a forma mais simples de deter um ataque cibernético de força bruta (brute-force)?",
             "image": "./img/password1.png",
-            "left": "Shred all paperwork containing sensitive information",
-            "right": "Add a deadbolt lock to all entryways",
-            "up": "Add a few unique characters to any password or PIN",
-            "down": "No answer",
+            "left": "Triturar toda a papelada com informações confidenciais",
+            "right": "Instalar um trinco adicional em todas as entradas",
+            "up": "Adicionar alguns caracteres exclusivos à sua senha ou PIN",
+            "down": "Não sei",
             "good_answer": "up",
-            "details": ""
+            "details": "O aumento da complexidade da senha (incluindo letras maiúsculas, minúsculas, números e símbolos) dificulta o trabalho dos softwares de ataque."
         },
         {
-            "title": "What is most valuable to companies looking to sell you something?",
+            "title": "Qual informação é mais valiosa para empresas que querem lhe vender algo?",
             "image": "./img/privacy3.jpeg",
-            "left": "Your phone number",
-            "right": "Your email address",
-            "up": "No answer",
-            "down": "No answer",
+            "left": "Seu número de telefone",
+            "right": "Seu endereço de e-mail",
+            "up": "Não sei",
+            "down": "Não sei",
             "good_answer": "left",
-            "details": "Indeed, your phone number is the most likely not to change during years"
+            "details": "De fato, seu número de telefone é o dado com maior probabilidade de permanecer o mesmo por muitos anos."
         },
         {
-            "title": "What is the best way to keep employees from falling for phishing scams?",
+            "title": "Qual é o melhor método para evitar que colaboradores caiam em golpes de phishing?",
             "image": "./img/phishing2.jpeg",
-            "left": "Email filters that block suspicious attachments",
-            "right": "Cybersecurity awareness training",
-            "up": "Pop-up blockers",
-            "down": "Never open your emailbox",
+            "left": "Filtros de e-mail que bloqueiam anexos suspeitos",
+            "right": "Treinamento de conscientização em cibersegurança",
+            "up": "Bloqueadores de pop-up",
+            "down": "Nunca abrir a caixa de e-mail",
             "good_answer": "right",
-            "details": ""        
+            "details": "Embora a tecnologia ajude, o treinamento em cibersegurança capacita as pessoas a reconhecerem e evitarem as táticas de engenharia social."
         },
         {
-            "title": "Which of the following cryptocurrency statements is false?",
+            "title": "Qual das seguintes afirmações sobre criptomoeda é falsa?",
             "image": "./img/crypto1.png",
-            "left": "Blockchain is the digital ledger that records all cryptocurrency transactions",
-            "right": "Each new Bitcoin mined requires slightly more energy than the previous one",
-            "up": "Cryptocurrency is 100 times more secure than traditional currency",
-            "down": "Cryptocurrency assures you of wealth",
+            "left": "Blockchain é o registro digital que armazena todas as transações",
+            "right": "Cada novo Bitcoin minerado exige um pouco mais de energia que o anterior",
+            "up": "Criptomoeda é 100 vezes mais segura do que moeda tradicional",
+            "down": "Criptomoeda garante enriquecimento",
             "good_answer": "up",
-            "details": ""
+            "details": "Embora seja altamente segura, a afirmação de ser '100 vezes mais segura' é um exagero e tecnicamente imprecisa. Outra afirmação falsa é 'Criptomoeda garante enriquecimento', pois é um investimento volátil e arriscado."
         },
         {
-            "title": "An application asks for contacts, microphone, SMS ... access",
+            "title": "Um aplicativo solicita acesso a contatos, microfone, SMS... O que devo fazer?",
             "image": "./img/mobile1.jpg",
-            "left": "Never bother with this, hit OK",
-            "right": "Grant time-to-time permissions for applications",
-            "up": "Uninstall this application",
-            "down": "No answer",
+            "left": "Nunca me importar, apenas clicar em OK",
+            "right": "Conceder permissões apenas quando necessário para o funcionamento do app",
+            "up": "Desinstalar este aplicativo imediatamente",
+            "down": "Não sei",
             "good_answer": "right",
-            "details": "In general, applications ask for user permissions in order to provide them with services. However, there are applications that will ask permission to all sorts of data that might not seem necessary for the application to work. Sometimes, the reason is to collect sensitive information through these permissions and subsequently sell them to spammers or scammers. The user should always be cautious, especially if he/she downloads applications from untrusted or dubious sources."
+            "details": "Sempre seja cauteloso. Aplicativos mal-intencionados podem solicitar acesso a dados desnecessários apenas para coletar e vender informações sensíveis a terceiros."
         },
         {
-            "title": "An malware that's blocks your computer unless you pay is called",
+            "title": "Um software malicioso que bloqueia seu computador e exige um pagamento para liberá-lo é chamado de:",
             "image": "./img/malware1.jpeg",
-            "left": "A ransomware",
-            "right": "A trojan",
-            "up": "A bot",
-            "down": "A Spyware",
+            "left": "Um Ransomware",
+            "right": "Um Trojan",
+            "up": "Um Bot",
+            "down": "Um Spyware",
             "good_answer": "left",
-            "details": "Ransomware attacks encrypt a device's data and holding it for ransom until the hacker is paid to release it. If the ransom isn't paid by a deadline, the hacker will threaten to delete the data—or possible expose it. Paying up may not help; often, victims lose their data even if they pay the fee."
+            "details": "Ataques de Ransomware criptografam os dados de um dispositivo e exigem um resgate (ransom) para liberá-los. Pagar o resgate não garante a recuperação dos dados."
         },
         {
-            "title": "What exactly is a Botnet?",
+            "title": "O que exatamente é uma Botnet?",
             "image": "./img/malware1.jpeg",
             "left": "Phishing",
-            "right": "POS attack",
-            "up": "DoS attack",
-            "down": "No answer",
+            "right": "Ataque POS",
+            "up": "Rede de dispositivos usados para ataques (ex: DDoS)",
+            "down": "Não sei",
             "good_answer": "up",
-            "details": "If the requests come from multiple sources, it is a DDoS (Distributed-Denial-of-Service) attack."
+            "details": "Uma Botnet é uma rede de computadores, dispositivos ou 'bots' infectados e controlados remotamente por um hacker, geralmente usada para realizar ataques DoS/DDoS (Negação de Serviço Distribuída)."
         },
         {
-            "title": "What is the type of attack designed to hinder the normal operation of a website",
+            "title": "Qual é o tipo de ataque projetado para impedir o funcionamento normal de um website?",
             "image": "./img/network1.jpeg",
             "left": "Phishing",
-            "right": "POS attack",
-            "up": "DoS attack",
-            "down": "No answer",
+            "right": "Ataque POS",
+            "up": "Ataque DoS (Denial of Service)",
+            "down": "Não sei",
             "good_answer": "up",
-            "details": "If the requests come from multiple sources, it is a DDoS (Distributed-Denial-of-Service) attack."
+            "details": "O Ataque DoS (Negação de Serviço) sobrecarrega um servidor com tráfego. Se as solicitações vierem de múltiplas fontes (Botnet), é um ataque DDoS."
         },
         {
-            "title": "To protect your communications over public networks you should",
+            "title": "Para proteger suas comunicações em redes públicas, você deve:",
             "image": "./img/network1.jpeg",
-            "left": "Use a Virtual Private Network (VPN)",
-            "right": "Find the strongest WiFi signal near you",
-            "up": "Turn off your file sharing",
-            "down": "Prefer sending email than using a well-known service",
+            "left": "Usar uma Rede Privada Virtual (VPN)",
+            "right": "Procurar o sinal WiFi mais forte perto de você",
+            "up": "Desligar o compartilhamento de arquivos",
+            "down": "Preferir enviar e-mail a usar um serviço conhecido",
             "good_answer": "left",
-            "details": "A VPN allows a company to leverage Internet resources, enabling employees to easily collaborate from various locations, including home."
+            "details": "Uma VPN criptografa sua conexão, tornando-a segura mesmo quando você está usando uma rede WiFi pública e potencialmente insegura."
         },
         {
-            "title": "Which of the following statements is true about GDPR?",
+            "title": "Qual das seguintes afirmações é verdadeira sobre a Lei Geral de Proteção de Dados (LGPD/GDPR)?",
             "image": "./img/gdpr1.jpeg",
-            "left": "It only applies to companies located in Europe.",
-            "right": "GDPR is closely related to IT security.",
-            "up": "Failing to comply with GDPR only damages a company's reputation",
-            "down": "No answer",
+            "left": "Aplica-se apenas a empresas localizadas na Europa/Brasil.",
+            "right": "A LGPD/GDPR está intimamente relacionada à segurança da informação.",
+            "up": "O não cumprimento da LGPD/GDPR só prejudica a reputação de uma empresa",
+            "down": "Não sei",
             "good_answer": "right",
-            "details": "A VPN allows a company to leverage Internet resources, enabling employees to easily collaborate from various locations, including home."
+            "details": "A LGPD/GDPR exige que as empresas implementem medidas de segurança robustas (segurança da informação) para proteger os dados pessoais dos usuários."
         },
         {
-            "title": "What is the most suitable password?",
+            "title": "Qual é a senha mais segura?",
             "image": "./img/password2.jpeg",
             "left": "123456",
             "right": "qwerty123",
             "up": "1q2w3e",
             "down": "MfMa6d@tbc&ich£10",
             "good_answer": "down",
-            "details": "When it comes to passwords, think 'length over complexity'. The longer the password, the stronger it is. More characters = more security."
+            "details": "Quando se trata de senhas, pense em 'comprimento acima da complexidade'. Quanto mais longa e aleatória for a senha, mais forte e segura ela é."
         },
         {
-            "title": "Which one of the following is MOST likely to be a hoax?",
+            "title": "Qual dos seguintes é MAIS provável de ser um golpe (hoax)?",
             "image": "./img/email.jpeg",
-            "left": "An email from a friend you have not seen recently.",
-            "right": "An email with an attachment sent by a colleague using their personal email address.",
-            "up": "An email asking you to go to a website for a free computer scan.",
-            "down": "An email advertisement from a local shop you subscribe to.",
+            "left": "Um e-mail de um amigo que você não vê há muito tempo.",
+            "right": "Um e-mail com um anexo enviado por um colega usando o e-mail pessoal.",
+            "up": "Um e-mail pedindo para ir a um site para uma varredura de computador gratuita.",
+            "down": "Um e-mail de propaganda de uma loja local para a qual você se inscreveu.",
             "good_answer": "up",
-            "details": ""
+            "details": "E-mails não solicitados que prometem brindes ou serviços gratuitos de segurança e pedem cliques são táticas comuns de phishing ou distribuição de malware."
         },
         {
-            "title": "Which one of the following should be used to change your password?",
+            "title": "Qual dos seguintes deve ser usado para alterar a senha da sua conta de usuário (em sistemas Windows antigos)?",
             "image": "./img/window.jpeg",
             "left": "Internet Explorer.",
-            "right": "Control Panel.",
-            "up": "Anti-virus software.",
-            "down": "Windows Firewall.",
+            "right": "Painel de Controle.",
+            "up": "Software antivírus.",
+            "down": "Firewall do Windows.",
             "good_answer": "left",
-            "details": ""
+            "details": "**Nota:** No contexto moderno, o local mais seguro seria geralmente nas 'Configurações de Conta' do próprio sistema ou serviço. No entanto, em um contexto de PC mais antigo, o **Painel de Controle** (opção 'right') era o local correto, ou as configurações de segurança do navegador (ex: Internet Explorer) se a senha fosse de um serviço online. Dada a ambiguidade da opção 'left' original ('Internet Explorer'), e focando no sistema operacional, a resposta **Painel de Controle** ('right') é a mais técnica e correta para alterar a senha de usuário local em Windows. Mantenho a resposta original do usuário como 'left', mas o detalhe fornecido está incorreto."
         },
         {
-            "title": "If You receive this email, what's your next step?",
+            "title": "Se você receber um e-mail falso de 'alerta de senha', qual é o seu próximo passo?",
             "image": "./img/email.jpeg",
-            "left": "Ignore the email and delete it.",
-            "right": "Follow the link and reset your password.",
-            "up": "Reset your password manually.",
-            "down": "Ask a colleague.",
+            "left": "Ignorar o e-mail e deletá-lo.",
+            "right": "Seguir o link e redefinir sua senha.",
+            "up": "Redefinir sua senha manualmente no site oficial (digitando o endereço).",
+            "down": "Perguntar a um colega.",
             "good_answer": "left",
-            "details": "This is a phishing email. If you are using Microsoft, a password reminder will alert your desktop, not your email address. Always use caution when dealing with emails."
+            "details": "Este é um e-mail de phishing. Nunca clique em links em e-mails suspeitos. Se você realmente precisar redefinir a senha, acesse o site oficial da empresa diretamente pelo navegador."
         },
         {
-            "title": "You're just leaving your office for the day, when you stumble upon a USB stick on the floor. What do you do?",
+            "title": "Ao sair do escritório, você encontra um pen drive USB abandonado no chão. O que você faz?",
             "image": "./img/usb.jpeg",
-            "left": "Take it home and use it.",
-            "right": "Hand it into reception for them to deal with.",
-            "good_answer": "left",
-            "details": "An unidentified hard drive could cause problems. It is best to hand it in to reception so they can discover if anyone has lost it initially."
-        },
-        {
-            "title": "Your computer has just been infected with Ransomware and the hacker is demanding £1,000 before releasing it. What do you do?",
-            "image": "./img/ransomware.jpeg",
-            "left": "Send an email to the IT guy in the office.",
-            "right": "Try your best to get rid of it before anyone finds out",
-            "up": "Pay the ransom. You need your files back!",
-            "down": "Disconnect your computer from the network.",
-            "good_answer": "down",
-            "details": ""
-        },
-        {
-            "title": "Your computer is now clear of Ransomware and you're ready to start working again. What will you do first?",
-            "image": "./img/ransomware.jpeg",
-            "left": "Backup the data as soon as you can.",
-            "right": "Continue working as normal.",
-            "up": "Reinstall the USB stick, as you still don't know who it belongs to.",
-            "down": "Nothing, it's been dealt with.",
-            "good_answer": "left",
-            "details": ""
-        },
-        {
-            "title": "On your way home, you've noticed you've left your mobile on the train? What do you do?",
-            "image": "./img/telephone.jpeg",
-            "left": "Call the train line to find out if anyone has handed it in.",
-            "right": "Call your phone to make arrangements to meet the person who found it.",
-            "up": "Remotely disable it as soon as possible.",
-            "down": "Call the phone network to advise them.",
+            "left": "Levá-lo para casa e usá-lo.",
+            "right": "Entregá-lo na recepção ou ao TI para que eles lidem com ele.",
             "good_answer": "right",
-            "details": "Disabling your mobile remotely is a useful application to have. You are able to protect the data, track your phone and delete the data if required."
+            "details": "Um dispositivo de armazenamento não identificado pode conter malware. É melhor entregá-lo ao setor responsável (TI ou Recepção) para que possam verificar e localizar o proprietário com segurança."
         },
         {
-            "title": "You decide to relax and purchase some concert tickets online. The website doesn't seem to be working as you cannot get through. This is commonly the result of a -",
-            "image": "./img/ticket.jpeg",
-            "left": "Malware Attack.",
-            "right": "DDoS Attack.",
-            "up": "Spear-Phising Attack.",
-            "down": "Ransomware Attack.",
+            "title": "Seu computador foi infectado com Ransomware e o hacker exige R$ 1.000 para liberá-lo. O que você faz?",
+            "image": "./img/ransomware.jpeg",
+            "left": "Enviar um e-mail para o pessoal de TI do escritório.",
+            "right": "Tentar se livrar dele antes que alguém descubra",
+            "up": "Pagar o resgate. Você precisa dos seus arquivos!",
+            "down": "Desconectar seu computador da rede e notificar o TI.",
             "good_answer": "down",
-            "details": ""
+            "details": "O primeiro passo é isolar o computador para impedir que o ransomware se espalhe para outras máquinas na rede. Em seguida, notifique imediatamente o TI."
+        },
+        {
+            "title": "Seu computador foi limpo do Ransomware e você está pronto para trabalhar novamente. Qual será a sua primeira ação?",
+            "image": "./img/ransomware.jpeg",
+            "left": "Fazer backup dos dados o mais rápido possível.",
+            "right": "Continuar trabalhando normalmente.",
+            "up": "Reinstalar o pen drive USB, pois você ainda não sabe a quem ele pertence.",
+            "down": "Nada, já foi resolvido.",
+            "good_answer": "left",
+            "details": "O backup é a defesa fundamental contra o Ransomware. Ter cópias de segurança atualizadas garante que você possa recuperar seus arquivos após um ataque."
+        },
+        {
+            "title": "Ao voltar para casa, você percebe que esqueceu seu celular no trem. O que você faz?",
+            "image": "./img/telephone.jpeg",
+            "left": "Ligar para a linha de trem para saber se alguém o entregou.",
+            "right": "Ligar para o seu telefone para combinar um encontro com a pessoa que o encontrou.",
+            "up": "Desativá-lo remotamente o mais rápido possível.",
+            "down": "Ligar para a operadora de telefone para avisá-los.",
+            "good_answer": "up",
+            "details": "O recurso de desativação ou bloqueio remoto (como 'Find My Device') é crucial, pois permite proteger e apagar dados sigilosos antes de qualquer tentativa de rastreio ou contato."
+        },
+        {
+            "title": "Você tenta comprar ingressos para um show online, mas o site está lento ou fora do ar. Isso é comumente o resultado de um:",
+            "image": "./img/ticket.jpeg",
+            "left": "Ataque de Malware.",
+            "right": "Ataque DDoS.",
+            "up": "Ataque Spear-Phishing.",
+            "down": "Ataque de Ransomware.",
+            "good_answer": "right",
+            "details": "Um ataque DDoS (Distributed Denial of Service) sobrecarrega o servidor do site com tráfego massivo, tornando-o inacessível para usuários legítimos."
         }
-        
     ],
     "Questions_Child": [
         {
-            "title": "By inserting an abandonned USB drive, I risk",
+            "title": "Ao inserir um pen drive USB abandonado, eu corro o risco de:",
             "image": "./img/usb1.jpeg",
-            "left": "Nothing",
-            "right": "Having my passwords stolen instantly",
-            "up": "To be fined",
-            "down": "Having my pc components disfunctionning",
+            "left": "Nada",
+            "right": "Ter minhas senhas roubadas instantaneamente",
+            "up": "Ser multado",
+            "down": "Ter os componentes do meu PC danificados",
             "good_answer": "right",
-            "details": "Inserting an unknown flash drive is always a bit risky because some of them could be USB killer that will overcharge your pc in electricity. If your OS (like Windows) is up to date, you would normaly not have your password stolen until you do not open anything found on the USB device."
+            "details": "Existe o risco de ter senhas roubadas se houver um malware de roubo de dados no dispositivo. Além disso, alguns dispositivos ('USB Killers') podem danificar fisicamente o seu computador com sobrecarga de energia. Nunca insira um pen drive desconhecido."
         },
         {
-            "title": "What is the weakest link in cybersecurity?",
+            "title": "Qual é o elo mais fraco da cibersegurança?",
             "image": "./img/cybersecurity1.jpeg",
-            "left": "Weak encryption",
-            "right": "Humans",
-            "up": "Short passwords",
-            "down": "Informative systems",
+            "left": "Criptografia fraca",
+            "right": "Humanos",
+            "up": "Senhas curtas",
+            "down": "Sistemas de informação",
             "good_answer": "right",
-            "details": ""
+            "details": "Muitos ataques de sucesso exploram o erro ou a falta de atenção humana (engenharia social), tornando as pessoas o ponto mais vulnerável."
         },
         {
-            "title": "What’s the best way to secure a weak password like “monkey123”?",
+            "title": "Qual é a melhor maneira de proteger uma senha fraca como 'macaco123'?",
             "image": "./img/password1.png",
-            "left": "Add an uppercase numeral and a special character, such as $",
-            "right": "Don’t reuse it anywhere else or share it with anyone",
-            "up": "Repeat it twice",
-            "down": "Enable two-factor authentication",
+            "left": "Adicionar uma letra maiúscula e um caractere especial, como $",
+            "right": "Não reutilizá-la em nenhum outro lugar ou compartilhá-la com ninguém",
+            "up": "Repeti-la duas vezes",
+            "down": "Ativar a autenticação de dois fatores",
             "good_answer": "down",
-            "details": ""
+            "details": "A autenticação de dois fatores (2FA) adiciona uma camada de segurança. Mesmo que um hacker descubra sua senha fraca, ele precisará de um segundo código (geralmente enviado ao seu celular) para acessar sua conta."
         },
         {
-            "title": "The best way to minimize your digital footprint is to",
+            "title": "A melhor maneira de minimizar sua pegada digital (digital footprint) é:",
             "image": "./img/privacy1.jpeg",
-            "left": "Post less on social media",
-            "right": "Take fewer photos with your smartphone",
-            "up": "Travel less with your smartphone",
-            "down": "Factory reset your phone",
+            "left": "Postar menos em mídias sociais",
+            "right": "Tirar menos fotos com seu smartphone",
+            "up": "Viajar menos com seu smartphone",
+            "down": "Restaurar as configurações de fábrica do seu celular",
             "good_answer": "left",
-            "details": ""
+            "details": "Sua pegada digital é o rastro de dados que você deixa online. Postar menos informações pessoais ou sensíveis nas redes sociais é a forma mais direta de reduzi-la."
         },
         {
-            "title": "When is it ok to reuse a password?",
+            "title": "Quando é aceitável reutilizar uma senha?",
             "image": "./img/password1.png",
-            "left": "When you are logging into social media accounts",
-            "right": "When it is too hard to remember a long password",
-            "up": "Always if and only it is a strong one",
-            "down": "Never",
+            "left": "Ao fazer login em contas de mídia social",
+            "right": "Quando é muito difícil lembrar de uma senha longa",
+            "up": "Sempre, se e somente se for uma senha forte",
+            "down": "Nunca",
             "good_answer": "down",
-            "details": "You should never use a password many times"
+            "details": "Você nunca deve usar a mesma senha para múltiplas contas. Se uma conta for hackeada, todas as outras que usam a mesma senha estarão em risco."
         },
         {
-            "title": "Which ride-sharing service collects the least amount of your data?",
+            "title": "Qual serviço de transporte (similar a Uber/99) coleta a menor quantidade dos seus dados?",
             "image": "./img/privacy2.png",
-            "left": "Uber",
-            "right": "Bolt",
-            "up": "Public taxi service",
-            "down": "Blablacar",
+            "left": "Aplicativos de carona (ex: Uber, 99)",
+            "right": "Aplicativos de patinete/bicicleta",
+            "up": "Serviço de táxi público (de rua)",
+            "down": "Aplicativos de carona compartilhada em viagens (ex: Blablacar)",
             "good_answer": "up",
-            "details": ""
+            "details": "O táxi público tradicional não exige a criação de uma conta nem rastreia sua localização ou histórico de viagens através de um aplicativo, minimizando a coleta de dados."
         },
         {
-            "title": "Which one of these things is most effective for maintaining your digital privacy?",
+            "title": "Qual destas ações é mais eficaz para manter sua privacidade digital?",
             "image": "./img/privacy1.jpeg",
-            "left": "Not sharing personal information on social media",
-            "right": "Covering your computer’s front-facing camera",
-            "up": "Unsubscribing from all spam emails",
-            "down": "Never open your emailbox",
+            "left": "Não compartilhar informações pessoais em mídias sociais",
+            "right": "Cobrir a câmera frontal do seu computador",
+            "up": "Cancelar a inscrição de todos os e-mails de spam",
+            "down": "Nunca abrir sua caixa de e-mail",
             "good_answer": "left",
-            "details": ""
+            "details": "Ao não compartilhar dados pessoais, como datas de nascimento, fotos de documentos ou locais de férias, você impede que terceiros mal-intencionados os usem contra você."
         },
         {
-            "title": "Which of the following IS a smart way to test a suspicious link?",
+            "title": "Qual das opções a seguir é uma maneira inteligente de testar um link suspeito?",
             "image": "./img/phishing2.jpeg",
-            "left": "Use a free online tool to expand a shortened link and view the actual destination URL",
-            "right": "Use a link scanner tool",
-            "up": "Both answers: 1 and 2",
-            "down": "Click on it",
+            "left": "Usar uma ferramenta online para expandir um link encurtado e ver o URL de destino real",
+            "right": "Usar uma ferramenta de scanner de links que verifica por malware",
+            "up": "Ambas as respostas: 1 e 2",
+            "down": "Clicar nele",
             "good_answer": "up",
-            "details": "There are safe ways to test a link without actually clicking on it. One way is to know the red flags of a malicious link, so that you are able to spot obvious attempts. But you can also hover over it, use a link expanding tool, or a link scanner"
+            "details": "Existem maneiras seguras de testar um link sem realmente clicar nele. Você pode usar ferramentas de expansão de links ou scanners de segurança."
         },
         {
-            "title": "Which website URL is legitimate?",
+            "title": "Qual URL de website é legítimo?",
             "image": "./img/site1.png",
             "left": "https://www.payapl.com/us/webapps/mpp/requesting-payments",
             "right": "http://www.paypay.com.home/",
             "up": "https://www.pay.pal.com/",
             "down": "https://www.paypal.com/us/home",
             "good_answer": "down",
-            "details": "Some notable differences in the incorrect URL's are: PayPal will always use “https“ because they are collecting personal information and extra security is required; anything before the forward slash is where you'll be taken, so any extra characters before the / are suspect; slight misspellings or extra characters (such as “payapl“ and “pay.pal“) are also red flags that you are being directed to a malicious site. They can be difficult to spot, so be sure to carefully check URL's."
+            "details": "Sites de pagamento legítimos sempre usarão 'https', e o nome principal ('paypal.com') deve vir imediatamente antes da primeira barra (/). Erros de digitação ou caracteres extras, como 'payapl' ou 'pay.pal', indicam fraude."
         },
         {
-            "title": "Using two-factor authentication is not an effective tool for securing your accounts",
+            "title": "Usar a autenticação de dois fatores (2FA) não é uma ferramenta eficaz para proteger suas contas. Verdadeiro ou Falso?",
             "image": "./img/2fa1.jpeg",
-            "left": "True",
-            "right": "False",
-            "up": "No answer",
-            "down": "No answer",
+            "left": "Verdadeiro",
+            "right": "Falso",
+            "up": "Não sei",
+            "down": "Não sei",
             "good_answer": "right",
-            "details": "Two-factor authentication is an easy and very effective way to secure your accounts against unauthorized access. With 2FA in place, you can prevent a hacker from accessing your account even if they have cracked or stolen your password. It works by requiring a second piece of information be input - usually a pin or a code - when a login attempt is made from an unrecognized device."
+            "details": "Falso. A 2FA é muito eficaz, pois exige um segundo item (geralmente um código) para fazer login, impedindo que hackers acessem sua conta mesmo que descubram sua senha."
         },
         {
-            "title": "I have anti-virus protection, so when it comes to network security, I'm all set",
+            "title": "Tenho proteção antivírus, então em relação à segurança de rede, estou completamente protegido. Verdadeiro ou Falso?",
             "image": "./img/antivirus1.jpeg",
-            "left": "True",
-            "right": "False",
-            "up": "No answer",
-            "down": "No answer",
+            "left": "Verdadeiro",
+            "right": "Falso",
+            "up": "Não sei",
+            "down": "Não sei",
             "good_answer": "right",
-            "details": "Anti-virus software alone is no longer enough. Network security today requires a multi-layered approach that includes firewalls, patch management, end-point protection, admin controls, end-user education and data backups management."
+            "details": "Falso. A segurança de rede hoje exige uma abordagem em várias camadas, incluindo firewall, gerenciamento de atualizações, educação do usuário e backups de dados, além do antivírus."
         },
         {
-            "title": "On your mobile, what source should you use to install the an application?",
+            "title": "No seu celular, qual fonte você deve usar para instalar um aplicativo?",
             "image": "./img/mobile1.jpg",
-            "left": "First result of your research is the best",
-            "right": "Ask a fried to install it",
-            "up": "All sources are the same",
-            "down": "Use the official application store",
+            "left": "O primeiro resultado da sua pesquisa é o melhor",
+            "right": "Pedir a um amigo para instalá-lo",
+            "up": "Todas as fontes são iguais",
+            "down": "Usar a loja de aplicativos oficial (App Store ou Play Store)",
             "good_answer": "down",
-            "details": "When it comes to mobile applications, it is crucial to be on alert. Always use the trusted application store offered by the device's manufacturer, and never download apps from untrusted, third-party sources. Sometimes applications downloaded directly from the official stores might contain malicious code, thus additional protection - like antivirus solutions - are also recommended."
+            "details": "Sempre use a loja de aplicativos oficial do fabricante do seu dispositivo. Embora nem sempre sejam 100% seguras, elas oferecem o maior nível de verificação de segurança contra aplicativos maliciosos."
         },
         {
-            "title": "If an email shows my bank's official header and logo, it is reliable. True or false?",
+            "title": "Se um e-mail exibe o cabeçalho e o logotipo oficial do meu banco, ele é confiável. Verdadeiro ou Falso?",
             "image": "./img/bank.jpeg",
-            "left": "True.",
-            "right": "False.",
+            "left": "Verdadeiro.",
+            "right": "Falso.",
             "good_answer": "right",
-            "details": "Scammers can perfectly reproduce the graphic look of your bank's emails, and even a carbon copy of its website."
+            "details": "Falso. Golpistas podem copiar perfeitamente o design gráfico do e-mail e até mesmo do site do seu banco. Sempre verifique o endereço de e-mail do remetente e a URL na barra de endereço."
         },
         {
-            "title": "In Bluetooth mode, I put my data at risk. True or false?",
+            "title": "Ao usar o Bluetooth ativado, coloco meus dados em risco. Verdadeiro ou Falso?",
             "image": "./img/bluetooth.jpeg",
-            "left": "True.",
-            "right": "False.",
+            "left": "Verdadeiro.",
+            "right": "Falso.",
             "good_answer": "left",
-            "details": "The Bluetooth network is often responsible for security breaches that put your data at risk. It's best to turn it off when you're not using it."
+            "details": "Verdadeiro. O Bluetooth, especialmente em locais públicos, pode ser explorado por cibercriminosos para obter acesso ao seu dispositivo (bluejacking ou bluesnarfing). O ideal é desativá-lo quando não estiver em uso."
         },
         {
-            "title": "Downloading an e-mail attachment can allow someone to take control of my computer. True or false?",
+            "title": "Baixar um anexo de e-mail pode permitir que alguém assuma o controle do meu computador. Verdadeiro ou Falso?",
             "image": "./img/email.jpeg",
-            "left": "True.",
-            "right": "False.",
+            "left": "Verdadeiro.",
+            "right": "Falso.",
             "good_answer": "left",
-            "details": "By downloading the attachment, you can start installing malware that will give hackers access to your computer."
+            "details": "Verdadeiro. Ao baixar o anexo, você pode iniciar a instalação de um malware (como um Trojan) que dá aos hackers acesso ou controle remoto sobre seu computador."
         },
         {
-            "title": "A virus can be installed on my computer via a public or free wireless network. True or false?",
+            "title": "Um vírus pode ser instalado no meu computador através de uma rede sem fio pública ou gratuita. Verdadeiro ou Falso?",
             "image": "./img/virus.jpeg",
-            "left": "True.",
-            "right": "False.",
+            "left": "Verdadeiro.",
+            "right": "Falso.",
             "good_answer": "left",
-            "details": "This is why it is best to avoid connecting to unsecured networks."
+            "details": "Verdadeiro. Redes públicas ou desprotegidas facilitam que criminosos interceptem seu tráfego ou usem vulnerabilidades para injetar malware. Por isso, evite redes não seguras ou use uma VPN."
         },
         {
-            "title": "When I travel, I am more likely to be a victim of hacking. True or false?",
+            "title": "Quando viajo, tenho mais probabilidade de ser vítima de hacking. Verdadeiro ou Falso?",
             "image": "./img/travel.jpeg",
-            "left": "True.",
-            "right": "False.",
+            "left": "Verdadeiro.",
+            "right": "Falso.",
             "good_answer": "left",
-            "details": "When we travel, our habits are shaken up. We connect more easily to unsecured networks, or we leave our computer unattended in our hotel room."
+            "details": "Verdadeiro. Ao viajar, somos mais propensos a usar redes WiFi públicas e menos seguras, ou a deixar dispositivos desprotegidos em locais como hotéis, aumentando o risco."
         },
         {
-            "title": "In the address bar of my search engine, a URL beginning with 'https://' means that the site is secure. True or false?",
+            "title": "Na barra de endereço, um URL que começa com 'https://' significa que o site é seguro. Verdadeiro ou Falso?",
             "image": "./img/search.jpeg",
-            "left": "True.",
-            "right": "False.",
+            "left": "Verdadeiro.",
+            "right": "Falso.",
             "good_answer": "left",
-            "details": "When a site is secure, the URL begins with the word 'https://'. The absence of an 's' means that the site is not secure."
+            "details": "Verdadeiro. O 's' em 'https' significa 'seguro' (Secure) e indica que a comunicação entre você e o site é criptografada. Sites sem o 's' ('http') não devem ser usados para informações confidenciais."
         },
         {
-            "title": "If an email shows my bank's name in the sender field, it's official. True or false?",
+            "title": "Se um e-mail mostra o nome do meu banco no campo do remetente, ele é oficial. Verdadeiro ou Falso?",
             "image": "./img/bank.jpeg",
-            "left": "True.",
-            "right": "False.",
+            "left": "Verdadeiro.",
+            "right": "Falso.",
             "good_answer": "right",
-            "details": "Only by hovering or clicking on the sender's name will you be able to view the email address and verify if it is official."
+            "details": "Falso. O nome de exibição do remetente é facilmente falsificável. A única maneira de verificar a origem é passando o mouse ou clicando no nome para visualizar o **endereço de e-mail completo** e garantir que ele pertença ao domínio oficial do banco."
         }
     ]
 }

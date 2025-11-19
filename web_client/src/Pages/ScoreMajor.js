@@ -29,17 +29,17 @@ const ScoreMajor = () => {
                 <img src={require("../Assets/logo.png")} style={{width:'20%'}} alt="Logo"/>
             </div>
             <div style={{marginTop: '5%'}}>
-            <h1>Advanced Leaderboard</h1><br/>
+            <h1>Ranking Avançado</h1><br/>
 
             <div style={{padding: '5px 45px 15px 45px'}}>
                 <Table striped bordered hover style={{border: '2px solid #01d976', color: 'white', boxShadow: '0px 0px 20px 0px rgba(1,217,118, 0.8)'}}>
                 <thead style={{border: '2px solid #01d976'}}>
                   <tr style={{border: '2px solid #01d976'}}>
-                  <th style={{border: '2px solid #01d976'}} width='10%'>Place</th>
-                    <th style={{border: '2px solid #01d976'}} width='20%'>Username</th>
-                    <th style={{border: '2px solid #01d976'}} width='10%'>Difficulty</th>
-                    <th style={{border: '2px solid #01d976'}} width='10%'>Score</th>
-                    <th style={{border: '2px solid #01d976'}} width='10%'>Date</th>
+                  <th style={{border: '2px solid #01d976'}} width='10%'>Posição</th>
+                    <th style={{border: '2px solid #01d976'}} width='20%'>Usuário</th>
+                    <th style={{border: '2px solid #01d976'}} width='10%'>Dificuldade</th>
+                    <th style={{border: '2px solid #01d976'}} width='10%'>Pontuação</th>
+                    <th style={{border: '2px solid #01d976'}} width='10%'>Data</th>
                     
                   </tr>
                 </thead>
@@ -50,9 +50,9 @@ const ScoreMajor = () => {
                 })
                 .map((scores, index) => (
                   <tr  key={index} style={{border: '2px solid #01d976', color: 'white'}}>
-                    <td style={{border: '2px solid #01d976', color: (username === scores.username ? '#01d976' : 'white'), backgroundColor: (index ? "" : "red"), fontWeight: (username === scores.username ? "bold" : "")}}>{index ? index : "Winner"}</td>
+                    <td style={{border: '2px solid #01d976', color: (username === scores.username ? '#01d976' : 'white'), backgroundColor: (index ? "" : "red"), fontWeight: (username === scores.username ? "bold" : "")}}>{index ? index : "Vencedor"}</td>
                     <td style={{border: '2px solid #01d976', color: (username === scores.username ? '#01d976' : 'white'), backgroundColor: (index ? "" : "red"), fontWeight: (username === scores.username ? "bold" : "")}}>{scores.username}</td>
-                    <td style={{border: '2px solid #01d976', color: (username === scores.username ? '#01d976' : 'white'), backgroundColor: (index ? "" : "red"), fontWeight: (username === scores.username ? "bold" : "")}}>{scores.score ? "Advanced Quiz" : "Beginner Quiz"}</td>
+                    <td style={{border: '2px solid #01d976', color: (username === scores.username ? '#01d976' : 'white'), backgroundColor: (index ? "" : "red"), fontWeight: (username === scores.username ? "bold" : "")}}>{scores.score ? "Quiz Avançado" : "Quiz Iniciante"}</td>
                     <td style={{border: '2px solid #01d976', color: (username === scores.username ? '#01d976' : 'white'), backgroundColor: (index ? "" : "red"), fontWeight: (username === scores.username ? "bold" : "")}}>{scores.score}</td>
                     <td style={{border: '2px solid #01d976', color: (username === scores.username ? '#01d976' : 'white'), backgroundColor: (index ? "" : "red"), fontWeight: (username === scores.username ? "bold" : "")}}>{scores.date}</td>
                   </tr>
@@ -60,7 +60,7 @@ const ScoreMajor = () => {
                 </tbody>
               </Table>
             </div>
-            <Button href='/choose-quiz' style={{backgroundColor: '#01d976', borderColor: '#01d976', fontWeight: 'bold'}} className='rounded-pill col-md-2 button-user'>Play Again</Button><br/><br/>
+            <Button href='/choose-quiz' style={{backgroundColor: '#01d976', borderColor: '#01d976', fontWeight: 'bold'}} className='rounded-pill col-md-2 button-user'>Jogar novamente</Button><br/><br/>
 
             </div>
 

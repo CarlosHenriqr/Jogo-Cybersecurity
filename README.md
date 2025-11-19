@@ -1,20 +1,118 @@
-# Game of Cybersecurity [EPITECH PROJET] [DOCUMENTATION]
-
->The project consists in developing an online game, with an open-source code, based on a traditional board game, with the objective of improving the level of maturity of the players in cybersecurity.
-
+# Game of Cybersecurity - Documento Final
 
 <a href="https://img.shields.io/badge/MADE%20WITH-REACTJS-blue" alt="ReactJS">
         <img src="https://img.shields.io/badge/MADE%20WITH-REACTJS-blue" /></a>
 <a href="https://img.shields.io/badge/MADE%20WITH-FLASK-red" alt="Flask">
         <img src="https://img.shields.io/badge/MADE%20WITH-FLASK-red" /></a>
 
-## Video
 <p align="center">
   <img src="https://github.com/CamilleSA/GameOfCybersecurity/blob/main/assets/GOC.gif" />
 </p>
 
->Within a time limit, you will have to answer a series of questions on the theme of cybersecurity. Each correct answer gives you extra time. To answer the questions, you must drag and drop the card on one of the sides. At the end of the timer, your score is computed.
-Have fun !
+## 1. Explicação do Jogo
+
+O **Game of Cybersecurity** é um jogo educativo online de código aberto, inspirado em jogos de cartas modernos, desenvolvido com o objetivo de aumentar a consciência e maturidade dos jogadores em questões de cibersegurança.
+
+O jogo funciona através de um sistema de perguntas e respostas cronometrado, onde os jogadores devem responder questões sobre segurança digital através de gestos intuitivos (swipe) ou botões. Cada resposta correta adiciona tempo extra ao cronômetro, incentivando o conhecimento e a rapidez. Ao final, o jogador recebe uma pontuação baseada em seu desempenho e pode comparar seus resultados com outros jogadores através de um ranking global.
+
+### Mecânica do Jogo:
+- Sistema de tempo limitado que recompensa respostas corretas com tempo adicional
+- Interface interativa com suporte a gestos (swipe) em quatro direções ou botões clicáveis
+- Dois níveis de dificuldade adaptados ao perfil do usuário
+- Feedback detalhado ao final, mostrando respostas corretas e explicações
+- Sistema de ranking para estimular a competição saudável e o aprendizado contínuo
+
+## 2. Ameaças e Temas Tratados
+
+O jogo aborda diversas ameaças e conceitos fundamentais de cibersegurança, organizados em dois níveis de complexidade:
+
+### Nível Iniciante (Beginner):
+Voltado para usuários com uso básico da internet (e-mails, redes sociais, pesquisas), o conteúdo inclui:
+- Identificação de phishing e e-mails fraudulentos
+- Segurança de senhas e autenticação
+- Privacidade em redes sociais
+- Reconhecimento de sites seguros (HTTPS)
+- Proteção contra malware básico
+- Boas práticas de navegação segura
+
+### Nível Avançado (Advanced):
+Destinado a usuários que utilizam a internet para trabalho, serviços administrativos e assinaturas online:
+- Ataques de engenharia social sofisticados
+- Segurança em transações bancárias e e-commerce
+- Proteção de dados pessoais (LGPD/GDPR)
+- Ransomware e ameaças avançadas
+- Segurança em home office e redes Wi-Fi
+- Autenticação multifator e gestão de identidades
+- Backup e recuperação de dados
+
+## 3. Público-Alvo
+
+O jogo foi desenvolvido para atender diferentes perfis de usuários:
+
+**Público Primário:**
+- Jovens e adultos (16+ anos) que desejam melhorar sua segurança digital
+- Estudantes de tecnologia e áreas relacionadas
+- Profissionais que utilizam a internet no trabalho
+
+**Público Secundário:**
+- Educadores que buscam ferramentas interativas para ensinar cibersegurança
+- Empresas interessadas em treinar colaboradores de forma lúdica
+- Qualquer pessoa preocupada com sua segurança e privacidade online
+
+A divisão em dois níveis de dificuldade permite que tanto iniciantes quanto usuários mais experientes encontrem desafios adequados ao seu conhecimento atual.
+
+## 4. Instruções de Jogo
+
+### Como Jogar:
+
+1. **Início**: Acesse o jogo e escolha um nome de usuário ou jogue anonimamente
+2. **Seleção de Dificuldade**: Escolha entre Beginner (Iniciante) ou Advanced (Avançado)
+3. **Gameplay**: 
+   - Leia cada pergunta apresentada na carta
+   - Responda usando uma das quatro opções disponíveis:
+     - **Swipe para cima/baixo/esquerda/direita** (em dispositivos touch)
+     - **Clique nos botões** correspondentes às respostas
+   - Respostas corretas adicionam tempo ao cronômetro
+   - Continue até o tempo acabar
+4. **Resultados**: Visualize sua pontuação e revise as respostas com explicações detalhadas
+5. **Ranking**: Compare seu desempenho com outros jogadores no leaderboard
+
+### Dicas para Melhor Desempenho:
+- Leia as perguntas com atenção antes de responder
+- Respostas corretas são mais importantes que velocidade
+- Use o modo de revisão para aprender com os erros
+- Pratique regularmente para melhorar sua pontuação
+
+## 5. Contribuição para Ética e Cidadania Digital
+
+O **Game of Cybersecurity** contribui significativamente para a formação de cidadãos digitais mais conscientes e éticos através de:
+
+### Educação Preventiva:
+- Capacita usuários a identificar e evitar ameaças digitais antes que causem danos
+- Promove comportamentos seguros e responsáveis no ambiente online
+- Reduz a vulnerabilidade a golpes e fraudes digitais
+
+### Consciência de Privacidade:
+- Ensina sobre a importância da proteção de dados pessoais
+- Demonstra como decisões online afetam a privacidade própria e de terceiros
+- Alinha-se com princípios de legislações como LGPD e GDPR
+
+### Responsabilidade Digital:
+- Incentiva práticas éticas no uso da tecnologia
+- Promove o respeito à propriedade intelectual e dados alheios
+- Desenvolve senso crítico sobre informações e conteúdos online
+
+### Inclusão e Acessibilidade:
+- Código aberto permite adaptação para diferentes contextos educacionais
+- Interface intuitiva reduz barreiras de entrada
+- Gratuito e acessível a qualquer pessoa com conexão à internet
+
+### Impacto Social:
+- Contribui para uma sociedade digital mais segura e informada
+- Reduz custos sociais relacionados a crimes cibernéticos
+- Empodera indivíduos a protegerem-se e protegerem suas comunidades
+
+Ao transformar o aprendizado de cibersegurança em uma experiência gamificada e envolvente, o projeto não apenas educa, mas também inspira uma mudança cultural em direção a práticas digitais mais seguras, éticas e responsáveis.
 
 
 

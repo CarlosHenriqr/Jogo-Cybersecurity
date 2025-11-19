@@ -12,7 +12,7 @@ function QuizMajor() {
   const currentIndexRef = useRef(currentIndex)
   const username = sessionStorage.getItem('username');
   const [start, setStart] = useState(false);
-  const [winTime, setWinTime] = useState(30);
+  const [winTime, setWinTime] = useState(90);
   const [score, setScore] = useState(0);  
   const [saveAnswer, setSaveAnswer] = useState([]);
   const canSwipe = currentIndex >= 0;
@@ -39,14 +39,6 @@ function QuizMajor() {
     quizDiv.style.display = 'block';
     handleStart();
   };
-
-  /*const remainingTime = ({ remainingTime }) => {
-    return (
-      <div>
-        <h1>{remainingTime}</h1>
-      </div>
-    );
-  };*/
 
   const updateCurrentIndex = (val) => {
     setCurrentIndex(val)
@@ -158,16 +150,16 @@ function QuizMajor() {
       </div>
       <div id='ready'>
         <div className='' style={{marginTop: '5%'}}>
-              <h1 className=''>Welcome {username} to the advanced quiz !</h1><br/>
-              <h2 className='text-center'>Are you ready ?</h2><br/><br/>
-              <Button onClick={showQuizz} style={{backgroundColor: '#01d976', borderColor: '#01d976'}} className='button-user rounded-pill col-md-2'>Start</Button><br/><br/>
+              <h1 className=''>Bem-vindo {username} ao quiz avançado!</h1><br/>
+              <h2 className='text-center'>Está pronto?</h2><br/><br/>
+              <Button onClick={showQuizz} style={{backgroundColor: '#01d976', borderColor: '#01d976'}} className='button-user rounded-pill col-md-2'>Iniciar</Button><br/><br/>
         </div><br/>
         <div className='offset-md-3 col-size' style={{width: '50%'}}>
           <div className='d-flex offset-md-5'>
-            <h2 className='text-center'>How to play ?</h2>
+            <h2 className='text-center'>Como jogar?</h2>
             <img src={require("../Assets/Bot.png")} style={{width:'10%'}} alt="Logo"/>
           </div>
-          <p className='text-center' style={{color: 'white', fontWeight: '', fontSize: '20px'}}>Within a time limit, you will have to answer a series of questions on the theme of cybersecurity. Each correct answer gives you extra time. To answer the questions, you must drag and drop the card on one of the sides. At the end of the timer, your score is computed. <br/>Have fun !</p>
+          <p className='text-center' style={{color: 'white', fontWeight: '', fontSize: '20px'}}>Dentro de um tempo limite, você deverá responder uma série de perguntas sobre cibersegurança. Cada resposta correta adiciona tempo ao cronômetro. Para responder, arraste o cartão para um dos lados. Ao acabar o tempo, sua pontuação será calculada. <br/>Divirta-se!</p>
         </div>
       </div>
 
@@ -195,7 +187,7 @@ function QuizMajor() {
         <FaRegTimesCircle color='red' size={40}/>
       </div><br/>
         <div className='offset-md-3' style={{marginTop: '2%'}}>
-            <h1 style={{fontSize: '30px'}}>{username} score : {score}</h1>
+            <h1 style={{fontSize: '30px'}}>Pontuação de {username}: {score}</h1>
         </div>
         </div>
 
@@ -237,27 +229,27 @@ function QuizMajor() {
       </div><br/>
 
       <div className='buttons offset-md2' style={{marginTop: '20px'}}>
-      <button className='button-go' style={{ backgroundColor: !canSwipe && '#c3c4d3' }} onClick={() => swipe('left')}>Answer 1</button>
-      <button className='button-aqua' style={{ backgroundColor: !canSwipe && '#c3c4d3' }} onClick={() => swipe('right')}>Answer 2</button>
-      <button className='button-fu' style={{ backgroundColor: !canSwipe && '#c3c4d3' }} onClick={() => swipe('up')}>Answer 3</button>
-      <button className='button-lightsalmon' style={{ backgroundColor: !canSwipe && '#c3c4d3' }} onClick={() => swipe('down')}>Answer 4</button>
+      <button className='button-go' style={{ backgroundColor: !canSwipe && '#c3c4d3' }} onClick={() => swipe('left')}>Resposta 1</button>
+      <button className='button-aqua' style={{ backgroundColor: !canSwipe && '#c3c4d3' }} onClick={() => swipe('right')}>Resposta 2</button>
+      <button className='button-fu' style={{ backgroundColor: !canSwipe && '#c3c4d3' }} onClick={() => swipe('up')}>Resposta 3</button>
+      <button className='button-lightsalmon' style={{ backgroundColor: !canSwipe && '#c3c4d3' }} onClick={() => swipe('down')}>Resposta 4</button>
       </div>
 
       </div>
       <div id="spin" style={{display: 'none', marginTop: '10%'}}>
         <Spinner animation="border" variant="#01d976" size="500" style={{height: '150px', width: '150px', color: '#01d976'}}/><br/><br/>
-        <h5 style={{color:"white", fontWeight: 'bold'}}>Loading results ...</h5>
+        <h5 style={{color:"white", fontWeight: 'bold'}}>Carregando resultados ...</h5>
       </div>
       <div id="details" style={{marginTop: '2%', display: 'none'}}>
-      <Button href='/score-major' style={{backgroundColor: '#01d976', borderColor: '#01d976', fontWeight: 'bold'}} className='rounded-pill col-md-2 button-user'>View Leaderboard</Button><br/><br/>
+      <Button href='/score-major' style={{backgroundColor: '#01d976', borderColor: '#01d976', fontWeight: 'bold'}} className='rounded-pill col-md-2 button-user'>Ver Ranking</Button><br/><br/>
         <div style={{backgroundColor: '#292a3e', padding: '5px 45px 15px 45px'}}>
                 <Table striped bordered hover style={{border: '2px solid #01d976', color: 'white', boxShadow: '0px 0px 20px 0px rgba(1,217,118, 0.8)'}}>
                 <thead style={{border: '2px solid #01d976'}}>
                   <tr style={{border: '2px solid #01d976'}}>
-                    <th style={{border: '2px solid #01d976'}} width='20%'>Question</th>
-                    <th style={{border: '2px solid #01d976'}} width='10%'>Good Answer</th>
-                    <th style={{border: '2px solid #01d976'}} width='20%'>Details</th>
-                    <th style={{border: '2px solid #01d976'}} width='4%'>Your Answer</th>
+                    <th style={{border: '2px solid #01d976'}} width='20%'>Pergunta</th>
+                    <th style={{border: '2px solid #01d976'}} width='10%'>Resposta correta</th>
+                    <th style={{border: '2px solid #01d976'}} width='20%'>Detalhes</th>
+                    <th style={{border: '2px solid #01d976'}} width='4%'>Sua resposta</th>
                   </tr>
                 </thead>
                 <tbody style={{border: '2px solid #01d976'}}>
